@@ -1,15 +1,16 @@
 package com.aymen.framework.dataSource.database
 
 
+import androidx.paging.PagingSource
 import com.aymen.framework.entity.UserEntity
 
 
 interface UserDatabase {
 
-    fun getAll(): List<UserEntity>?
+    fun getAll(): PagingSource<Int, UserEntity>
 
-    fun insertAll(users: List<UserEntity>)
+    suspend fun insertAll(users: List<UserEntity>)
 
-    fun deleteAll()
+    suspend fun deleteAll()
 
 }

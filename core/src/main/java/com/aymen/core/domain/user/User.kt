@@ -6,9 +6,7 @@ import java.io.Serializable
 
 data class User(
 
-    @Expose
-    @SerializedName("id")
-    val id: Id,
+    val userId: String,
 
     @Expose
     @SerializedName("phone")
@@ -33,6 +31,12 @@ data class User(
     @Expose
     @SerializedName("picture")
     val picture: Picture,
+
+    @Expose
+    @SerializedName("login")
+    val login: Login,
+
+    var page :Int?
 
     ) : Serializable{
 

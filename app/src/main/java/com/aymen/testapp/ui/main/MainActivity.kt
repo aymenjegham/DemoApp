@@ -23,7 +23,6 @@ class MainActivity : BaseActivity() {
 
     private val navFragment: Fragment
         get() = nav_host_fragment
-
     private val navHostFragment by lazy { navFragment as NavHostFragment }
 
     private val navGraph by lazy {

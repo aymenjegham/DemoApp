@@ -13,13 +13,12 @@ class UserHolder private constructor(
     private val binding: ItemUserBinding,
     private val enableAction: (Int) -> Unit,
     private val context: Context,
-    private val picasso: Picasso
+    private val picasso: Picasso,
 ) : RecyclerView.ViewHolder(binding.root) {
 
 
-
     fun bind(item: User) {
-       binding.user = item
+        binding.user = item
         binding.picasso = picasso
 
 
@@ -35,10 +34,10 @@ class UserHolder private constructor(
             parent: ViewGroup,
             enableAction: (Int) -> Unit,
             context: Context,
-            picasso: Picasso
+            picasso: Picasso,
         ) =
             LayoutInflater.from(parent.context)
                 .let { ItemUserBinding.inflate(it, parent, false) }
-                .let { UserHolder(it, enableAction, context,picasso) }
+                .let { UserHolder(it, enableAction, context, picasso) }
     }
 }

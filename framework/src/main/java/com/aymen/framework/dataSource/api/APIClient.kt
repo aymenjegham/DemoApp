@@ -1,13 +1,13 @@
 package com.aymen.framework.dataSource.api
 
-import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 
 interface APIClient {
 
-    @GET("?results=10")
-    suspend fun getAllUsers(): Response<com.aymen.framework.entity.Result>
+    @GET("?seed=foobar&results=30")
+    suspend fun getUsers(@Query("page") page: Int): com.aymen.framework.entity.Result
 
 
 }

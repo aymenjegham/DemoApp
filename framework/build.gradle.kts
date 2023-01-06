@@ -64,8 +64,8 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("com.google.firebase:firebase-auth:21.1.0")
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.4")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.44.2")
@@ -83,6 +83,12 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion")
     testImplementation("androidx.room:room-testing:$roomVersion")
     implementation("androidx.room:room-paging:$roomVersion")
+
+
+    //Paging 3
+    val pagingVersion = "3.1.1"
+    implementation("androidx.paging:paging-runtime:$pagingVersion")
+    implementation ("androidx.paging:paging-compose:1.0.0-alpha17")
 
     // Picasso
     implementation("com.squareup.picasso:picasso:2.71828")

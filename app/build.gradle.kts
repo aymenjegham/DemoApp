@@ -60,8 +60,8 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.1.0-alpha03")
 
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.4")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.google.android.material:material:1.7.0")
 
@@ -73,7 +73,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.44.2")
@@ -98,6 +98,11 @@ dependencies {
     //Architecture Components - Navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.6.0-alpha04")
     implementation("androidx.navigation:navigation-ui-ktx:2.6.0-alpha04")
+
+    //Paging
+    val pagingVersion = "3.1.1"
+    implementation("androidx.paging:paging-runtime:$pagingVersion")
+    implementation ("androidx.paging:paging-compose:1.0.0-alpha17")
 
     //For runBlockingTest, CoroutineDispatcher etc.
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
