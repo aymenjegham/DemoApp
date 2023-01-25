@@ -1,5 +1,5 @@
 # TestApp
-## Native android Evaluation App for hiring purposes
+## Native android demo App 
 
 This is just a simple two screen ,app, home screen with list fetched from API with random users ,click on one item and you'll navigate to the next screen with more details
 
