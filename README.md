@@ -1,4 +1,4 @@
-# TestApp
+# DemoApp
 ## Native android demo App 
 
 This is just a simple two screen ,app, home screen with list fetched from API with random users ,click on one item and you'll navigate to the next screen with more details
@@ -29,7 +29,7 @@ This is just a simple two screen ,app, home screen with list fetched from API wi
 
 ## Perspective
 
-This repo is basically just a demo and definitely lacks tons of stuff due to short time frame ,these are the possible future improvements :
+This repo is basically just a demo and definitely lacks tons of stuff ,these are the possible future improvements :
 
 - Moving from Room database to delight and the purpose is possible of doing KMP and code sharing
 - Moving from Livedata to use of statflow,SharedFlow  ,the purpose is preparing for moving toward a full KMP structure
